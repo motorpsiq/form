@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="stylos.css">
+</head>
+<body>
+    <div class="formulario">
+    <form action="form.php" method="POST">
+        
+        <table>
+            <tr>
+                <td><input type="text" placeholder="tu nombre" name="nombre" required></td>
+            </tr>
+            <tr>
+                <td><input type="password" placeholder="tu contraseña" name="password" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="genero" value="F" required> FEMENINO 
+                    <input type="radio" name="genero" value="M" required> MASCULINO
+                    <input type="radio" name="genero" value="I" required> INDEFINIDO
+                </td>
+            </tr>
+            <tr>
+                <td><input type="mail" placeholder="tu correo" name="email" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <select class="seleccion" name="materia" required>
+                        <option selected hidden value="">MATERIAS</option>
+                        <option value="etica">ETICA</option>
+                        <option value="legislacion">LEGISLACION</option>
+                        <option value="base">BASE DE DATOS</option>
+                        <option value="sistema">SISTEMA OPERATIVO</option>
+                        <option value="seguridad">SEGURIDAD INFORMATICA</option>
+                        <option value="proyecto">PROYECTO</option>
+                    </select>
+                    <input type="phone" placeholder="tu numero" name="telefono" required>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="ENVIAR" name="enviar"></td>
+            </tr>
+        </table>
+
+    </form>
+</div>
+</body>
+</html>
